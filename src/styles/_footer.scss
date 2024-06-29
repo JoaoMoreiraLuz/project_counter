@@ -1,0 +1,67 @@
+@use 'var';
+
+.footer {
+    padding: 26 8px;
+    background-image: url(../img/stardew-valley-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        background-image: url(../img/footer_banner_cell.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5.6vw;
+    }
+
+    &__content {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 5vw;
+
+        @media (max-width: 768px) {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        &__copyright {
+            
+            &__me {
+                background-color: var.$bgColorProf;
+                border: 3px solid var.$bgBorderProf;
+                padding: 8px 36px;
+                display: flex;
+                justify-content: center;
+
+                @media (max-width: 768px) {
+                    display: block;
+                    justify-content: center;
+                }
+
+                p {
+                    align-items: center;
+                }
+                a {
+                    align-items: center;
+                    img {
+                        max-width: 38px;
+                        width: 100%;
+                        margin-left: 15px;  
+                        background-color: rgb(250, 242, 238);
+                        border-radius: 40px;
+
+                        @media (max-width: 768px) {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.text--big {
+    margin-bottom: 10px;
+    font-size: 24px;
+}

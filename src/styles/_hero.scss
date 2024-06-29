@@ -1,0 +1,16 @@
+.hero {
+    padding-top: 100px;
+    padding-bottom: 250px;
+    background-image: url(../img/Fazenda_Sigilo_Banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        position: relative;
+    }
+
+    @media(max-width: 768px) {
+        background-size: cover;
+        background-image: url(../img/banner_cell.png);
+    }
+}
